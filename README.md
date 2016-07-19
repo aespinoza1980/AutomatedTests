@@ -10,5 +10,6 @@ Basic Configuration and how to run the tests.
 
 3) Open up a command line prompt and go to the root folder of the project and from the root folder execute the following 
 
-mvn -Dtest=DragNDropTest test 
+mvn -Dtest=DragNDropTest test
+
 mvn -Dtest=HoverTest test  
