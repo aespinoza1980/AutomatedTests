@@ -22,7 +22,7 @@ public class HoverTest extends BaseTest{
     @Test
     public void Hover() throws InterruptedException {
         MainPage mainPage = new MainPage(driver, true, propertyValues);
-        mainPage.clickOnMenuElement("Hovers");
+        mainPage.clickOnMenuElement(hovers);
         boolean click = false;
         int k = 3;
         String [] cssPath = {"#content > div > div:nth-child(" + k + ") > div > a"};

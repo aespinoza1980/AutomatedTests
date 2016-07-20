@@ -13,3 +13,13 @@ Basic Configuration and how to run the tests.
 mvn -Dtest=DragNDropTest test
 
 mvn -Dtest=HoverTest test  
+
+mvn -Dtest=HorizontalSliderTest test  
+
+mvn -Dtest=TinyMceTest test  
+
+Optional parameters
+
+-Dbrowser=chrome
+
+

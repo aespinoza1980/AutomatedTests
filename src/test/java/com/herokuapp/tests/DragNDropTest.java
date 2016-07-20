@@ -21,7 +21,7 @@ public class DragNDropTest extends BaseTest  {
     @Test
     public void DragNDrop() throws InterruptedException {
         MainPage mainPage = new MainPage(driver, true, propertyValues);
-        mainPage.clickOnMenuElement("Drag and Drop");
+        mainPage.clickOnMenuElement(dragandDrop);
         DragNDropPage dragNDropPage = new DragNDropPage(driver, true, propertyValues);
         Thread.sleep(2000);
         dragNDropPage.DragNDrop("#column-a", "#column-b");
