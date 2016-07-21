@@ -12,10 +12,16 @@ import java.io.IOException;
  * Created by Alexis Espinoza on 7/20/16.
  */
 public class HorizontalSliderTest extends BaseTest{
-    @Parameters({"browser" })
+    @Parameters({"browser", "browser_version", "os", "os_version", "mobileBrowserName","mobilePlatform","mobileDevice"})
     @BeforeTest
-    public void setUpLocal(@Optional("firefox") String browser)throws IOException {
-        this.setUp(browser);
+    public void setUpLocal(@Optional("firefox") String browser,
+                           @Optional("")String browser_version,
+                           @Optional("")String os,
+                           @Optional("")String os_version,@Optional("")String mobileBrowserName,
+                           @Optional("")String mobilePlatform,
+                           @Optional("")String mobileDevice
+                           )throws IOException {
+        this.setUp(browser,browser_version,os,os_version,mobileBrowserName,mobilePlatform,mobileDevice);
     }
     @Test
     public void HorizontalSlider() throws InterruptedException {

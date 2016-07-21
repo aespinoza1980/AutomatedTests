@@ -2,23 +2,58 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="10255" started-at="2016-07-20T13:25:48Z" finished-at="2016-07-20T13:25:58Z">
+  <suite name="Surefire suite" duration-ms="63419" started-at="2016-07-21T17:01:20Z" finished-at="2016-07-21T17:02:24Z">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="10255" started-at="2016-07-20T13:25:48Z" finished-at="2016-07-20T13:25:58Z">
-      <class name="com.herokuapp.tests.TinyMceTest">
-        <test-method status="PASS" signature="setUpLocal(java.lang.String)[pri:0, instance:com.herokuapp.tests.TinyMceTest@7f690630]" name="setUpLocal" is-config="true" duration-ms="5384" started-at="2016-07-20T13:25:48Z" finished-at="2016-07-20T13:25:53Z">
+    <test name="Surefire test" duration-ms="63419" started-at="2016-07-21T17:01:20Z" finished-at="2016-07-21T17:02:24Z">
+      <class name="com.herokuapp.tests.InfiniteScrollingTest">
+        <test-method status="PASS" signature="setUpLocal(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.herokuapp.tests.InfiniteScrollingTest@6bf256fa]" name="setUpLocal" is-config="true" duration-ms="6796" started-at="2016-07-21T17:01:20Z" finished-at="2016-07-21T17:01:27Z">
           <params>
             <param index="0">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="1">
               <value>
                 <![CDATA[firefox]]>
               </value>
             </param>
+            <param index="2">
+              <value>
+                <![CDATA[46]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[OS X]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[El capitan]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="TinyMce()[pri:0, instance:com.herokuapp.tests.TinyMceTest@7f690630]" name="TinyMce" duration-ms="4768" started-at="2016-07-20T13:25:53Z" finished-at="2016-07-20T13:25:58Z">
+        <test-method status="PASS" signature="InfiniteScrolling()[pri:0, instance:com.herokuapp.tests.InfiniteScrollingTest@6bf256fa]" name="InfiniteScrolling" duration-ms="48811" started-at="2016-07-21T17:01:27Z" finished-at="2016-07-21T17:02:16Z">
         </test-method>
-        <test-method status="PASS" signature="close()[pri:0, instance:com.herokuapp.tests.TinyMceTest@7f690630]" name="close" is-config="true" duration-ms="86" started-at="2016-07-20T13:25:58Z" finished-at="2016-07-20T13:25:58Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:com.herokuapp.tests.InfiniteScrollingTest@6bf256fa]" name="close" is-config="true" duration-ms="7798" started-at="2016-07-21T17:02:16Z" finished-at="2016-07-21T17:02:24Z">
         </test-method>
       </class>
     </test>

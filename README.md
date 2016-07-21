@@ -18,8 +18,33 @@ mvn -Dtest=HorizontalSliderTest test
 
 mvn -Dtest=TinyMceTest test  
 
+mvn -Dtest=InfiniteScrollingTest test    (optional parameters -DscrollIterations=< int >    (default =10))
 Optional parameters
 
 -Dbrowser=chrome
+
+
+Configure an account in browserstack and modify the settings accordingly in the BaseTest class(USERNAME,AUTOMATE_KEY)
+BrowserStack parameters
+
+
+-Dbrowser=firefox
+
+-Dbrowser_version=<version> 
+
+-Dos=<os> 
+
+-Dos_version=<version>
+
+
+For mobile
+
+-DmobileBrowserName=<browserName> 
+
+-DmobilePlatform=<platform>
+
+-DmobileDevice=<device>
+
+Check mobile  OS and browser  configuration parameters here https://www.browserstack.com/automate/java
 
 

@@ -14,10 +14,14 @@ import java.io.IOException;
  * Created by Alexis Espinoza on 7/19/16.
  */
 public class HoverTest extends BaseTest{
-    @Parameters({"browser" })
+    @Parameters({"browser", "browser_version", "os", "os_version", "mobileBrowserName","mobilePlatform","mobileDevice"})
     @BeforeTest
-    public void setUpLocal(@Optional("firefox") String browser)throws IOException {
-        this.setUp(browser);
+    public void setUpLocal(@Optional("firefox") String browser,@Optional("")String browser_version,@Optional("")String os,
+                           @Optional("")String os_version,
+                           @Optional("")String mobileBrowserName,
+                           @Optional("")String mobilePlatform,
+                           @Optional("")String mobileDevice)throws IOException {
+        this.setUp(browser,browser_version,os,os_version,mobileBrowserName,mobilePlatform,mobileDevice);
     }
     @Test
     public void Hover() throws InterruptedException {
@@ -29,7 +33,7 @@ public class HoverTest extends BaseTest{
         int j = 1;
         for (int i = 0; i < 3; i++) {
             HoverPage HoverPage = new HoverPage(driver, click, propertyValues);
-            HoverPage.Hover("#content > div > div:nth-child(" + k +")");
+            HoverPage.Hover("#content > div > div:nth-child(" + k + ")");
             HoverPage.assertViewProfile(cssPath, "users/" + j);
             Thread.sleep(2000);
             k++;
@@ -38,5 +42,6 @@ public class HoverTest extends BaseTest{
             cssPath[0] = "#content > div > div:nth-child(" + k + ") > div > a";
             click = true;
         }
+        close();
     }
 }

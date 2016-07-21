@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.herokuapp.tests.BrowserStackTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 37.769 sec - in com.herokuapp.tests.BrowserStackTest

@@ -3,11 +3,11 @@
 <suite thread-count="10" verbose="0" name="Failed suite [Surefire suite]" parallel="methods">
   <test name="Surefire test(failed)" parallel="methods" preserve-order="true">
     <classes>
-      <class name="com.herokuapp.tests.TinyMceTest">
+      <class name="com.herokuapp.tests.InfiniteScrollingTest">
         <methods>
-          <include name="TinyMce"/>
-          <include name="setUpLocal"/>
+          <include name="InfiniteScrolling"/>
           <include name="close"/>
+          <include name="setUpLocal"/>
         </methods>
       </class>
     </classes>
