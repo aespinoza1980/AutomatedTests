@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.*;
 import java.nio.charset.Charset;
+import java.util.NoSuchElementException;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
@@ -105,6 +106,14 @@ public class BasePage {
             return builder.toString();
         } finally {
             stream.close();
+        }
+    }
+    protected boolean isElementPresent(By by) {
+        try {
+            driver.findElement(by);
+            return true;
+        } catch (Exception e) {
+            return false;
         }
     }
 }

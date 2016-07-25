@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.herokuapp.tests.TinyMceTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.616 sec - in com.herokuapp.tests.TinyMceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.407 sec - in com.herokuapp.tests.TinyMceTest

@@ -1,0 +1,38 @@
+-------------------------------------------------------------------------------
+Test set: com.herokuapp.tests.JavascriptAlertsTests
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 9.73 sec <<< FAILURE! - in com.herokuapp.tests.JavascriptAlertsTests
+JavascriptAlerts(com.herokuapp.tests.JavascriptAlertsTests)  Time elapsed: 1.725 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchWindowException: 
+Window not found. The browser window may have been closed.
+Command duration or timeout: 71 milliseconds
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'b-Sat-M645', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-46-generic', java.version: '1.8.0_72'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=36.0.1, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 0978d86a-880e-494e-b09c-f5b718591542
+	at com.herokuapp.tests.JavascriptAlertsTests.JavascriptAlerts(JavascriptAlertsTests.java:30)
+Caused by: org.openqa.selenium.NoSuchWindowException: 
+Window not found. The browser window may have been closed.
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'b-Sat-M645', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-46-generic', java.version: '1.8.0_72'
+Driver info: driver.version: unknown
+
+close(com.herokuapp.tests.JavascriptAlertsTests)  Time elapsed: 1.811 sec  <<< FAILURE!
+org.openqa.selenium.remote.UnreachableBrowserException: 
+Error communicating with the remote browser. It may have died.
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'b-Sat-M645', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-46-generic', java.version: '1.8.0_72'
+Driver info: driver.version: RemoteWebDriver
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7056 [/127.0.0.1] failed: Connection refused
+Caused by: java.net.ConnectException: Connection refused
+
+close(com.herokuapp.tests.JavascriptAlertsTests)  Time elapsed: 1.812 sec  <<< FAILURE!
+org.openqa.selenium.remote.UnreachableBrowserException: 
+Error communicating with the remote browser. It may have died.
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'b-Sat-M645', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-46-generic', java.version: '1.8.0_72'
+Driver info: driver.version: RemoteWebDriver
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7056 [/127.0.0.1] failed: Connection refused
+Caused by: java.net.ConnectException: Connection refused
+

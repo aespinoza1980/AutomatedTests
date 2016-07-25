@@ -35,7 +35,6 @@ public class HoverTest extends BaseTest{
             HoverPage HoverPage = new HoverPage(driver, click, propertyValues);
             HoverPage.Hover("#content > div > div:nth-child(" + k + ")");
             HoverPage.assertViewProfile(cssPath, "users/" + j);
-            Thread.sleep(2000);
             k++;
             j++;
             cssPath    = new String[1];

@@ -35,9 +35,6 @@ public class DragNDropPage extends BasePage{
         }catch(Exception e){
         e.printStackTrace();
         }
-
-
-
     }
 
 }

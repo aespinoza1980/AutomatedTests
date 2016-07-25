@@ -37,7 +37,7 @@ public class Property {
                     + ','  + prop.getProperty("nestedFrames") + ','  + prop.getProperty("notificationMessages") + ','  + prop.getProperty("redirectLink")
                     + ','  + prop.getProperty("secureFileDownload") + ','  + prop.getProperty("shiftingContent") + ','  + prop.getProperty("slowResources")
                     + ','  + prop.getProperty("sortableDataTables")+ ','  + prop.getProperty("statusCodes")+ ','  + prop.getProperty("typos")
-                    + ','  + prop.getProperty("WYSIWYGEditor");
+                    + ','  + prop.getProperty("WYSIWYGEditor")+ ','  + prop.getProperty("usernameForm")+ ','  + prop.getProperty("passwordForm");
 
         } catch (Exception e) {
             System.out.println("Exception: " + e);

@@ -70,7 +70,8 @@ public class BaseTest {
     private final String USERNAME                    = "yourbrowserstackuser";
     private final String AUTOMATE_KEY                = "yourbrowserstackpass";
     private final String URL                         = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
-
+    protected String usernameForm                    = null;
+    protected String passwordForm                    = null;
 
     private HashMap<String, ArrayList<String>> osSetup() {
         HashMap<String, ArrayList<String>> operatingSystem = new HashMap<String, ArrayList<String>>();
@@ -177,6 +178,8 @@ public class BaseTest {
         statusCodes                 = propertyValues[37];
         typos                       = propertyValues[38];
         WYSIWYGEditor               = propertyValues[39];
+        usernameForm                = propertyValues[40];
+        passwordForm                = propertyValues[41];
     }
     @AfterTest
      public void close() {
