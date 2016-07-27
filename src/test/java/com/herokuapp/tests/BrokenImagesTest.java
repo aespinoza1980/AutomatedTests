@@ -1,18 +1,21 @@
 package com.herokuapp.tests;
 
-import com.herokuapp.pages.JavascriptAlertsPage;
+import com.herokuapp.pages.BrokenImagesPage;
 import com.herokuapp.pages.MainPage;
+import com.herokuapp.pages.TablesPage;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.util.List;
 
 /**
- * Created by Alexis Espinoza on 7/25/16.
+ * Created by Alexis Espinoza on 7/26/16.
  */
-public class JavascriptAlertsTest extends BaseTest{
+public class BrokenImagesTest extends BaseTest {
     @Parameters({"scrollIterations","browser", "browser_version", "os", "os_version", "mobileBrowserName","mobilePlatform","mobileDevice"})
     @BeforeTest
     public void setUpLocal(@Optional("") String scrollIterations,
@@ -24,12 +27,12 @@ public class JavascriptAlertsTest extends BaseTest{
         this.setUp(browser,browser_version,os,os_version,mobileBrowserName,mobilePlatform,mobileDevice);
     }
     @Test
-    public void JavascriptAlerts() throws InterruptedException {
+    public void BrokenImages() throws InterruptedException {
         MainPage mainPage = new MainPage(driver, true, propertyValues);
-        mainPage.clickOnMenuElement(javaScriptAlerts);
-        JavascriptAlertsPage javascriptAlertsPage = new JavascriptAlertsPage(driver, false, propertyValues);
-        javascriptAlertsPage.javascriptAlertsButtons();
-        Thread.sleep(1000);
+        mainPage.clickOnMenuElement(brokenImages);
+        BrokenImagesPage brokenImagesPage = new BrokenImagesPage(driver, false, propertyValues);
+        brokenImagesPage.checkBrokenImages();
+        Thread.sleep(2000);
         close();
     }
 }

@@ -31,5 +31,6 @@ public class TablesTest extends BaseTest{
         TablesPage tablesPage = new TablesPage(driver, false, propertyValues);
         tablesPage.example1();
         Thread.sleep(2000);
+        close();
     }
 }

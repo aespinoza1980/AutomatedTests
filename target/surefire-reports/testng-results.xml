@@ -2,21 +2,21 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="16292" started-at="2016-07-25T18:29:46Z" finished-at="2016-07-25T18:30:03Z">
+  <suite name="Surefire suite" duration-ms="10215" started-at="2016-07-27T16:08:14Z" finished-at="2016-07-27T16:08:24Z">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="16292" started-at="2016-07-25T18:29:46Z" finished-at="2016-07-25T18:30:03Z">
-      <class name="com.herokuapp.tests.AuthenticationTest">
-        <test-method status="PASS" signature="setUpLocal(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.herokuapp.tests.AuthenticationTest@2f7a2457]" name="setUpLocal" is-config="true" duration-ms="4987" started-at="2016-07-25T18:29:46Z" finished-at="2016-07-25T18:29:51Z">
+    <test name="Surefire test" duration-ms="10215" started-at="2016-07-27T16:08:14Z" finished-at="2016-07-27T16:08:24Z">
+      <class name="com.herokuapp.tests.ExitIntentTest">
+        <test-method status="PASS" signature="setUpLocal(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.herokuapp.tests.ExitIntentTest@2f7a2457]" name="setUpLocal" is-config="true" duration-ms="5256" started-at="2016-07-27T16:08:14Z" finished-at="2016-07-27T16:08:19Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
             <param index="2">
@@ -49,16 +49,11 @@
                 <![CDATA[]]>
               </value>
             </param>
-            <param index="8">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="successfulAuthentication()[pri:0, instance:com.herokuapp.tests.AuthenticationTest@2f7a2457]" name="successfulAuthentication" duration-ms="11276" started-at="2016-07-25T18:29:51Z" finished-at="2016-07-25T18:30:03Z">
+        <test-method status="PASS" signature="ExitIntentTest()[pri:0, instance:com.herokuapp.tests.ExitIntentTest@2f7a2457]" name="ExitIntentTest" duration-ms="4862" started-at="2016-07-27T16:08:19Z" finished-at="2016-07-27T16:08:24Z">
         </test-method>
-        <test-method status="PASS" signature="close()[pri:0, instance:com.herokuapp.tests.AuthenticationTest@2f7a2457]" name="close" is-config="true" duration-ms="12" started-at="2016-07-25T18:30:03Z" finished-at="2016-07-25T18:30:03Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:com.herokuapp.tests.ExitIntentTest@2f7a2457]" name="close" is-config="true" duration-ms="77" started-at="2016-07-27T16:08:24Z" finished-at="2016-07-27T16:08:24Z">
         </test-method>
       </class>
     </test>

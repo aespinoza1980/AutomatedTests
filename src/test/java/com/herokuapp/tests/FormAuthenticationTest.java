@@ -40,5 +40,6 @@ public class FormAuthenticationTest extends BaseTest{
         formAuthenticationTest.formAuthentication("FailedUsername", "FailedPassword");
         formAuthenticationTest.checkTopMessage("Your username is invalid!");
         Thread.sleep(1000);
+        close();
     }
 }

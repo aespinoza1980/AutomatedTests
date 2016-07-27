@@ -37,5 +37,6 @@ public class InfiniteScrollingTest extends BaseTest{
         InfiniteScrollingPage infiniteScrollingPage = new InfiniteScrollingPage(driver, false, propertyValues);
         infiniteScrollingPage.scrollDown(scrollIterations);
         Thread.sleep(2000);
+        close();
     }
 }

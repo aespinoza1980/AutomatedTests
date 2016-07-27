@@ -3,12 +3,11 @@
 <suite thread-count="10" verbose="0" name="Failed suite [Surefire suite]" parallel="methods">
   <test name="Surefire test(failed)" parallel="methods" preserve-order="true">
     <classes>
-      <class name="com.herokuapp.tests.FormAuthenticationTest">
+      <class name="com.herokuapp.tests.ExitIntentTest">
         <methods>
           <include name="setUpLocal"/>
-          <include name="failedLoginLogOut"/>
           <include name="close"/>
-          <include name="loginLogOut"/>
+          <include name="ExitIntentTest"/>
         </methods>
       </class>
     </classes>

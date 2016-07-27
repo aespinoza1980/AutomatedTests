@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: com.herokuapp.tests.DragNDropTest
+Test set: com.herokuapp.tests.ExitIntentTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.928 sec - in com.herokuapp.tests.DragNDropTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.499 sec - in com.herokuapp.tests.ExitIntentTest

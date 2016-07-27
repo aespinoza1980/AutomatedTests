@@ -57,6 +57,11 @@
             <artifactId>sikuli-api</artifactId>
             <version>1.0.2</version>
         </dependency>
+        <dependency>
+            <groupId>org.sikuli</groupId>
+            <artifactId>sikuli-api</artifactId>
+            <version>1.0.2</version>
+        </dependency>
          https://mvnrepository.com/artifact/org.sikuli/sikuli-webdriver -->
         <!--<dependency>
             <groupId>org.sikuli</groupId>

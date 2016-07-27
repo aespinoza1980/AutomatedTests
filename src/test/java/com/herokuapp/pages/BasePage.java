@@ -1,5 +1,9 @@
 package com.herokuapp.pages;
 
+import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.HttpClientBuilder;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -8,6 +12,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.*;
 import java.nio.charset.Charset;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
@@ -20,6 +26,7 @@ import static org.testng.Assert.assertEquals;
 public class BasePage {
     protected WebDriver driver;
     protected String[] propertyValues;
+    private static int invalidImageCount;
     WebDriverWait wait;
 
     public BasePage () { }
@@ -115,5 +122,85 @@ public class BasePage {
         } catch (Exception e) {
             return false;
         }
+    }
+
+    protected List<WebElement> getWebElements(By by, String att ) {
+        List<WebElement> elementsList;
+        try {
+            elementsList = driver.findElements(by);
+            for (WebElement elements : elementsList) {
+                System.out.println(elements.getAttribute(att));
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            elementsList = new ArrayList<WebElement>();
+        }
+        return elementsList;
+    }
+    protected void validateInvalidImages() {
+        try {
+            invalidImageCount = 0;
+            List<WebElement> imagesList = driver.findElements(By.tagName("img"));
+            System.out.println("Total no. of images are " + imagesList.size());
+            for (WebElement imgElement : imagesList) {
+                if (imgElement != null) {
+                    verifyActiveElements(imgElement, "src");
+                }
+            }
+            System.out.println("Total no. of invalid images are "	+ invalidImageCount);
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println(e.getMessage());
+        }
+    }
+    protected boolean elementActive (WebElement element, String att) {
+        boolean isElementActive = true;
+        try {
+            HttpClient client = HttpClientBuilder.create().build();
+            HttpGet request = new HttpGet(element.getAttribute(att));
+            HttpResponse response = client.execute(request);
+            // verifying response code he HttpStatus should be 200 if not,
+            // increment as invalid images count
+            if (response.getStatusLine().getStatusCode() != 200) {
+                System.out.println("Invalid "+element.getAttribute("src"));
+                isElementActive = false;
+            }
+
+        } catch (Exception e) {
+            isElementActive = false;
+            e.printStackTrace();
+
+        }
+        return isElementActive;
+    }
+
+    protected void verifyActiveElements(WebElement imgElement, String att) {
+        try {
+            HttpClient client = HttpClientBuilder.create().build();
+            HttpGet request = new HttpGet(imgElement.getAttribute(att));
+            HttpResponse response = client.execute(request);
+            // verifying response code he HttpStatus should be 200 if not,
+            // increment as invalid images count
+            if (response.getStatusLine().getStatusCode() != 200) {
+                invalidImageCount++;
+                System.out.println("Invalid "+imgElement.getAttribute("src"));
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    protected List findAllLinks() {
+        ArrayList<WebElement> elementList = new ArrayList<WebElement>();
+        elementList.addAll(driver.findElements(By.tagName("a")));
+        elementList.addAll(driver.findElements(By.tagName("img")));
+        List finalList = new ArrayList(); ;
+        for (WebElement element : elementList) {
+            if(element.getAttribute("href") != null) {
+                finalList.add(element);
+            }
+        }
+        return finalList;
     }
 }
