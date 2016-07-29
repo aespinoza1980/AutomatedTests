@@ -1,4 +1,26 @@
 -------------------------------------------------------------------------------
 Test set: com.herokuapp.tests.FileUploadTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.092 sec - in com.herokuapp.tests.FileUploadTest
+Tests run: 5, Failures: 4, Errors: 0, Skipped: 1, Time elapsed: 45.566 sec <<< FAILURE! - in com.herokuapp.tests.FileUploadTest
+setUpLocal(com.herokuapp.tests.FileUploadTest)  Time elapsed: 45.462 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Unable to bind to locking port 7054 within 45000 ms
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'b-Sat-M645', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-46-generic', java.version: '1.8.0_72'
+Driver info: driver.version: FirefoxDriver
+	at com.herokuapp.tests.FileUploadTest.setUpLocal(FileUploadTest.java:23)
+
+setUpLocal(com.herokuapp.tests.FileUploadTest)  Time elapsed: 45.465 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Unable to bind to locking port 7054 within 45000 ms
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'b-Sat-M645', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-46-generic', java.version: '1.8.0_72'
+Driver info: driver.version: FirefoxDriver
+	at com.herokuapp.tests.FileUploadTest.setUpLocal(FileUploadTest.java:23)
+
+close(com.herokuapp.tests.FileUploadTest)  Time elapsed: 0.003 sec  <<< FAILURE!
+java.lang.NullPointerException
+
+close(com.herokuapp.tests.FileUploadTest)  Time elapsed: 0.003 sec  <<< FAILURE!
+java.lang.NullPointerException
+

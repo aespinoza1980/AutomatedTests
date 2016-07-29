@@ -3,10 +3,10 @@
 <suite thread-count="10" verbose="0" name="Failed suite [Surefire suite]" parallel="methods">
   <test name="Surefire test(failed)" parallel="methods" preserve-order="true">
     <classes>
-      <class name="com.herokuapp.tests.FileUploadTest">
+      <class name="com.herokuapp.tests.FloatingMenuTest">
         <methods>
           <include name="close"/>
-          <include name="loginLogOut"/>
+          <include name="FloatingMenuTest"/>
           <include name="setUpLocal"/>
         </methods>
       </class>

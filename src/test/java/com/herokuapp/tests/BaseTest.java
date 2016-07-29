@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.phantomjs.PhantomJSDriver;
+import org.openqa.selenium.phantomjs.PhantomJSDriverService;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterTest;
@@ -127,12 +129,17 @@ public class BaseTest {
                 // Launch InternetExplorerDriver
                     driver = new InternetExplorerDriver();
 
-                }else if(this.browser.equals("chrome")){
-                    System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/chromedriver");//"/usr/bin/google-chrome"
-                    System.out.println(System.getProperty("webdriver.chrome.driver"));
-                    driver = new ChromeDriver();
-                }else{
-                    driver = new FirefoxDriver();
+                }else {
+                    if (this.browser.equals("chrome")) {
+                        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/chromedriver");//"/usr/bin/google-chrome"
+                        System.out.println(System.getProperty("webdriver.chrome.driver"));
+                        driver = new ChromeDriver();
+                    } else {
+                        driver = new FirefoxDriver();
+                        /*DesiredCapabilities DesireCaps = new DesiredCapabilities();
+                        DesireCaps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, "/usr/bin/X11/phantomjs");
+                        driver = new PhantomJSDriver();*/
+                    }
                 }
             }
             driver.manage().window().maximize();

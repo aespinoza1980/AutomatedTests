@@ -2,21 +2,21 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="12784" started-at="2016-07-28T18:07:23Z" finished-at="2016-07-28T18:07:35Z">
+  <suite name="Surefire suite" duration-ms="11884" started-at="2016-07-29T16:54:48Z" finished-at="2016-07-29T16:55:00Z">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="12784" started-at="2016-07-28T18:07:23Z" finished-at="2016-07-28T18:07:35Z">
-      <class name="com.herokuapp.tests.FileUploadTest">
-        <test-method status="PASS" signature="setUpLocal(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.herokuapp.tests.FileUploadTest@2f7a2457]" name="setUpLocal" is-config="true" duration-ms="4859" started-at="2016-07-28T18:07:23Z" finished-at="2016-07-28T18:07:27Z">
+    <test name="Surefire test" duration-ms="11884" started-at="2016-07-29T16:54:48Z" finished-at="2016-07-29T16:55:00Z">
+      <class name="com.herokuapp.tests.FloatingMenuTest">
+        <test-method status="PASS" signature="setUpLocal(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.herokuapp.tests.FloatingMenuTest@3cda1055]" name="setUpLocal" is-config="true" duration-ms="6268" started-at="2016-07-29T16:54:48Z" finished-at="2016-07-29T16:54:54Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
             <param index="2">
@@ -44,11 +44,16 @@
                 <![CDATA[]]>
               </value>
             </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="loginLogOut()[pri:0, instance:com.herokuapp.tests.FileUploadTest@2f7a2457]" name="loginLogOut" duration-ms="7903" started-at="2016-07-28T18:07:27Z" finished-at="2016-07-28T18:07:35Z">
+        <test-method status="PASS" signature="FloatingMenuTest()[pri:0, instance:com.herokuapp.tests.FloatingMenuTest@3cda1055]" name="FloatingMenuTest" duration-ms="5524" started-at="2016-07-29T16:54:54Z" finished-at="2016-07-29T16:55:00Z">
         </test-method>
-        <test-method status="PASS" signature="close()[pri:0, instance:com.herokuapp.tests.FileUploadTest@2f7a2457]" name="close" is-config="true" duration-ms="1" started-at="2016-07-28T18:07:35Z" finished-at="2016-07-28T18:07:35Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:com.herokuapp.tests.FloatingMenuTest@3cda1055]" name="close" is-config="true" duration-ms="74" started-at="2016-07-29T16:55:00Z" finished-at="2016-07-29T16:55:00Z">
         </test-method>
       </class>
     </test>

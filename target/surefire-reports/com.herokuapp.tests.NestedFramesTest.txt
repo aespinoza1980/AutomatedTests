@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: com.herokuapp.tests.NestedFramesTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 17.783 sec <<< FAILURE! - in com.herokuapp.tests.NestedFramesTest
+NestedFramesTest(com.herokuapp.tests.NestedFramesTest)  Time elapsed: 12.043 sec  <<< FAILURE!
+org.openqa.selenium.StaleElementReferenceException: 
+Element belongs to a different frame than the current one - switch to its containing frame to use it
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'b-Sat-M645', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-46-generic', java.version: '1.8.0_72'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=36.0.1, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 71377b9d-0d55-4904-94ce-0dc3b776b68d
+	at com.herokuapp.tests.NestedFramesTest.NestedFramesTest(NestedFramesTest.java:31)
+Caused by: org.openqa.selenium.StaleElementReferenceException: 
+Element belongs to a different frame than the current one - switch to its containing frame to use it
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'b-Sat-M645', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-46-generic', java.version: '1.8.0_72'
+Driver info: driver.version: unknown
+
